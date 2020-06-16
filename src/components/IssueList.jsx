@@ -15,7 +15,10 @@ export default class IssueList extends Component {
   componentDidMount() {
     fetch('https://api.github.com/repos/facebook/create-react-app/issues')
       .then(response => response.json())
-      .then(data => { this.setState({ issues: data ? data : [] }) })
+      .then(data => {
+        this.setState({ issues: data ? data : [] });
+        console.log(data);
+      })
   }
 
 
