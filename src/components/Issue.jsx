@@ -31,11 +31,18 @@ function Issue(props) {
     <div className="Issue" >
       <div className="Issue__icon"></div>
       <div className="Issue__details">
-        <p>Issue</p>
+        <a href={issue.html_url} className="Issue__link">{issue.title}</a>
+        <div className="Issue__labels">
+          {issue.labels.map(label => <Label label={label} key={label.id} />)}
+        </div>
+        <div className="Issue__meta">
+          {getMetaFragment(issue)}
+        </div>
 
       </div>
 
     </div>
   );
 }
-}
+
+export default Issue
