@@ -24,7 +24,7 @@ export default class IssueList extends Component {
   render() {
     return (
       <div className="IssueList" >
-        {this.state.issue.map(issus => <Issue issue={issue} key={issue.id} />)}
+        {this.state.issue.map(issue => <Issue issue={issue} key={issue.id} />)}
       </div>
     );
   }
