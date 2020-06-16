@@ -6,7 +6,7 @@ import IssueList from './components/IssueList';
 function App() {
   return (
     <div className="App">
-      <IssuesList />
+      <IssueList />
     </div>
   );
 }

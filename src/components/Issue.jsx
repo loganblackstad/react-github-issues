@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
 import moment from 'moment'
 import './Issue.css';
-import 'bootstrap/dist/css/bootstrap.css'
-import { Button, Col, Row, Form, } from 'react-bootstrap'
+import Label from './Label'
 
 
 function getUserLink(user) {

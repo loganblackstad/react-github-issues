@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
 import './IssueList.css';
 import Issue from './Issue.jsx'
-import 'bootstrap/dist/css/bootstrap.css'
-import { Button, Col, Row, Form, } from 'react-bootstrap'
 
 
 export default class IssueList extends Component {
@@ -24,7 +22,7 @@ export default class IssueList extends Component {
   render() {
     return (
       <div className="IssueList" >
-        {this.state.issue.map(issue => <Issue issue={issue} key={issue.id} />)}
+        {this.state.issues.map(issue => <Issue issue={issue} key={issue.id} />)}
       </div>
     );
   }
